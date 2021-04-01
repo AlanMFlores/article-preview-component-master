@@ -1,0 +1,43 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 725px;
+    display: flex;
+}
+
+.card__image img{
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.profile {
+    padding-bottom: 35px;
+}
+
+/*-----ToolTip-----*/
+
+.share {
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 300;
+    left: 65%;
+    bottom: 100%;
+    box-shadow: 5px 11px 37px -12px rgba(189,189,189,1);
+}
+
+.share::after {
+    content: "";
+    display: block;
+    border-top: 15px solid var(--very-dar-grayish-blue);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    top: 100%;
+}
